@@ -1,0 +1,12 @@
+Z:\hau\hau\hau\bin\Debug\hau.exe.config
+Z:\hau\hau\hau\bin\Debug\hau.exe
+Z:\hau\hau\hau\bin\Debug\hau.pdb
+Z:\hau\hau\hau\obj\Debug\hau.csprojResolveAssemblyReference.cache
+Z:\hau\hau\hau\obj\Debug\hau.checkconnect.resources
+Z:\hau\hau\hau\obj\Debug\hau.Properties.Resources.resources
+Z:\hau\hau\hau\obj\Debug\hau.csproj.GenerateResource.Cache
+Z:\hau\hau\hau\obj\Debug\hau.exe
+Z:\hau\hau\hau\obj\Debug\hau.pdb
+Z:\hau\hau\hau\obj\Debug\hau.chialop.frmCheckConn2.resources
+Z:\hau\hau\hau\bin\Debug\DataLayer.dll
+Z:\hau\hau\hau\bin\Debug\DataLayer.pdb

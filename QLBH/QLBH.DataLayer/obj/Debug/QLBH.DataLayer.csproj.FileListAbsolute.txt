@@ -1,0 +1,5 @@
+Z:\hau\QLBH\QLBH.DataLayer\bin\Debug\QLBH.DataLayer.dll
+Z:\hau\QLBH\QLBH.DataLayer\bin\Debug\QLBH.DataLayer.pdb
+Z:\hau\QLBH\QLBH.DataLayer\obj\Debug\QLBH.DataLayer.csprojResolveAssemblyReference.cache
+Z:\hau\QLBH\QLBH.DataLayer\obj\Debug\QLBH.DataLayer.dll
+Z:\hau\QLBH\QLBH.DataLayer\obj\Debug\QLBH.DataLayer.pdb

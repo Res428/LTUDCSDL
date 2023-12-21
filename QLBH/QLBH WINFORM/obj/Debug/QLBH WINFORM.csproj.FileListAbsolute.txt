@@ -1,0 +1,6 @@
+Z:\hau\QLBH\QLBH WINFORM\bin\Debug\QLBH WINFORM.exe.config
+Z:\hau\QLBH\QLBH WINFORM\obj\Debug\QLBH WINFORM.csprojResolveAssemblyReference.cache
+Z:\hau\QLBH\QLBH WINFORM\obj\Debug\QLBH_WINFORM.Hệ_thống.FrmKetnoi.resources
+Z:\hau\QLBH\QLBH WINFORM\obj\Debug\QLBH_WINFORM.Main.resources
+Z:\hau\QLBH\QLBH WINFORM\obj\Debug\QLBH_WINFORM.Properties.Resources.resources
+Z:\hau\QLBH\QLBH WINFORM\obj\Debug\QLBH WINFORM.csproj.GenerateResource.Cache

@@ -1,0 +1,9 @@
+Z:\hau\QLBH\QLBH.BusinessLayer\bin\Debug\QLBH.BusinessLayer.dll
+Z:\hau\QLBH\QLBH.BusinessLayer\bin\Debug\QLBH.BusinessLayer.pdb
+Z:\hau\QLBH\QLBH.BusinessLayer\bin\Debug\QLBH.DataLayer.dll
+Z:\hau\QLBH\QLBH.BusinessLayer\bin\Debug\QLBH.DTO.dll
+Z:\hau\QLBH\QLBH.BusinessLayer\bin\Debug\QLBH.DataLayer.pdb
+Z:\hau\QLBH\QLBH.BusinessLayer\bin\Debug\QLBH.DTO.pdb
+Z:\hau\QLBH\QLBH.BusinessLayer\obj\Debug\QLBH.BusinessLayer.csprojResolveAssemblyReference.cache
+Z:\hau\QLBH\QLBH.BusinessLayer\obj\Debug\QLBH.BusinessLayer.dll
+Z:\hau\QLBH\QLBH.BusinessLayer\obj\Debug\QLBH.BusinessLayer.pdb

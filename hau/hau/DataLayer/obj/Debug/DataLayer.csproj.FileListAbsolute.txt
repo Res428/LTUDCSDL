@@ -1,0 +1,5 @@
+Z:\hau\hau\DataLayer\bin\Debug\DataLayer.dll
+Z:\hau\hau\DataLayer\bin\Debug\DataLayer.pdb
+Z:\hau\hau\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+Z:\hau\hau\DataLayer\obj\Debug\DataLayer.dll
+Z:\hau\hau\DataLayer\obj\Debug\DataLayer.pdb

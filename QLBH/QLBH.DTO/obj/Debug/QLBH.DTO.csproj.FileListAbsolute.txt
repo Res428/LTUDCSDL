@@ -1,0 +1,5 @@
+Z:\hau\QLBH\QLBH.DTO\bin\Debug\QLBH.DTO.dll
+Z:\hau\QLBH\QLBH.DTO\bin\Debug\QLBH.DTO.pdb
+Z:\hau\QLBH\QLBH.DTO\obj\Debug\QLBH.DTO.csprojResolveAssemblyReference.cache
+Z:\hau\QLBH\QLBH.DTO\obj\Debug\QLBH.DTO.dll
+Z:\hau\QLBH\QLBH.DTO\obj\Debug\QLBH.DTO.pdb
