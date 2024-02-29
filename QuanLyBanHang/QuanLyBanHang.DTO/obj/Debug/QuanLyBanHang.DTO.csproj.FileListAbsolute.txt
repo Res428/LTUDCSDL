@@ -1,0 +1,16 @@
+D:\Projects\HocTap\Project_Windows\Pro2023\LapTrinhCSDLVoiCSharp_Khoa21\Lessons\Lesson03_21CT113\QuanLyBanHang\QuanLyBanHang.DTO\bin\Debug\QuanLyBanHang.DTO.dll
+D:\Projects\HocTap\Project_Windows\Pro2023\LapTrinhCSDLVoiCSharp_Khoa21\Lessons\Lesson03_21CT113\QuanLyBanHang\QuanLyBanHang.DTO\bin\Debug\QuanLyBanHang.DTO.pdb
+D:\Projects\HocTap\Project_Windows\Pro2023\LapTrinhCSDLVoiCSharp_Khoa21\Lessons\Lesson03_21CT113\QuanLyBanHang\QuanLyBanHang.DTO\obj\Debug\QuanLyBanHang.DTO.csproj.AssemblyReference.cache
+D:\Projects\HocTap\Project_Windows\Pro2023\LapTrinhCSDLVoiCSharp_Khoa21\Lessons\Lesson03_21CT113\QuanLyBanHang\QuanLyBanHang.DTO\obj\Debug\QuanLyBanHang.DTO.csproj.CoreCompileInputs.cache
+D:\Projects\HocTap\Project_Windows\Pro2023\LapTrinhCSDLVoiCSharp_Khoa21\Lessons\Lesson03_21CT113\QuanLyBanHang\QuanLyBanHang.DTO\obj\Debug\QuanLyBanHang.DTO.dll
+D:\Projects\HocTap\Project_Windows\Pro2023\LapTrinhCSDLVoiCSharp_Khoa21\Lessons\Lesson03_21CT113\QuanLyBanHang\QuanLyBanHang.DTO\obj\Debug\QuanLyBanHang.DTO.pdb
+D:\QuanLyBanHang\QuanLyBanHang.DTO\bin\Debug\QuanLyBanHang.DTO.dll
+D:\QuanLyBanHang\QuanLyBanHang.DTO\bin\Debug\QuanLyBanHang.DTO.pdb
+D:\QuanLyBanHang\QuanLyBanHang.DTO\obj\Debug\QuanLyBanHang.DTO.dll
+D:\QuanLyBanHang\QuanLyBanHang.DTO\obj\Debug\QuanLyBanHang.DTO.pdb
+D:\STUDY\LTUDCSDL\LTUDCSDL\QuanLyBanHang\QuanLyBanHang.DTO\bin\Debug\QuanLyBanHang.DTO.dll
+D:\STUDY\LTUDCSDL\LTUDCSDL\QuanLyBanHang\QuanLyBanHang.DTO\bin\Debug\QuanLyBanHang.DTO.pdb
+D:\STUDY\LTUDCSDL\LTUDCSDL\QuanLyBanHang\QuanLyBanHang.DTO\obj\Debug\QuanLyBanHang.DTO.csproj.AssemblyReference.cache
+D:\STUDY\LTUDCSDL\LTUDCSDL\QuanLyBanHang\QuanLyBanHang.DTO\obj\Debug\QuanLyBanHang.DTO.csproj.CoreCompileInputs.cache
+D:\STUDY\LTUDCSDL\LTUDCSDL\QuanLyBanHang\QuanLyBanHang.DTO\obj\Debug\QuanLyBanHang.DTO.dll
+D:\STUDY\LTUDCSDL\LTUDCSDL\QuanLyBanHang\QuanLyBanHang.DTO\obj\Debug\QuanLyBanHang.DTO.pdb

@@ -1,0 +1,17 @@
+D:\Projects\HocTap\Project_Windows\Pro2023\LapTrinhCSDLVoiCSharp_Khoa21\Lessons\Lesson03_21CT113\QuanLyBanHang\QuanLyBanHang.DataLayer\bin\Debug\QuanLyBanHang.DataLayer.dll
+D:\Projects\HocTap\Project_Windows\Pro2023\LapTrinhCSDLVoiCSharp_Khoa21\Lessons\Lesson03_21CT113\QuanLyBanHang\QuanLyBanHang.DataLayer\bin\Debug\QuanLyBanHang.DataLayer.pdb
+D:\Projects\HocTap\Project_Windows\Pro2023\LapTrinhCSDLVoiCSharp_Khoa21\Lessons\Lesson03_21CT113\QuanLyBanHang\QuanLyBanHang.DataLayer\obj\Debug\QuanLyBanHang.DataLayer.csproj.AssemblyReference.cache
+D:\Projects\HocTap\Project_Windows\Pro2023\LapTrinhCSDLVoiCSharp_Khoa21\Lessons\Lesson03_21CT113\QuanLyBanHang\QuanLyBanHang.DataLayer\obj\Debug\QuanLyBanHang.DataLayer.csproj.CoreCompileInputs.cache
+D:\Projects\HocTap\Project_Windows\Pro2023\LapTrinhCSDLVoiCSharp_Khoa21\Lessons\Lesson03_21CT113\QuanLyBanHang\QuanLyBanHang.DataLayer\obj\Debug\QuanLyBanHang.DataLayer.dll
+D:\Projects\HocTap\Project_Windows\Pro2023\LapTrinhCSDLVoiCSharp_Khoa21\Lessons\Lesson03_21CT113\QuanLyBanHang\QuanLyBanHang.DataLayer\obj\Debug\QuanLyBanHang.DataLayer.pdb
+D:\QuanLyBanHang\QuanLyBanHang.DataLayer\bin\Debug\QuanLyBanHang.DataLayer.dll
+D:\QuanLyBanHang\QuanLyBanHang.DataLayer\bin\Debug\QuanLyBanHang.DataLayer.pdb
+D:\QuanLyBanHang\QuanLyBanHang.DataLayer\obj\Debug\QuanLyBanHang.DataLayer.csprojResolveAssemblyReference.cache
+D:\QuanLyBanHang\QuanLyBanHang.DataLayer\obj\Debug\QuanLyBanHang.DataLayer.dll
+D:\QuanLyBanHang\QuanLyBanHang.DataLayer\obj\Debug\QuanLyBanHang.DataLayer.pdb
+D:\STUDY\LTUDCSDL\LTUDCSDL\QuanLyBanHang\QuanLyBanHang.DataLayer\bin\Debug\QuanLyBanHang.DataLayer.dll
+D:\STUDY\LTUDCSDL\LTUDCSDL\QuanLyBanHang\QuanLyBanHang.DataLayer\bin\Debug\QuanLyBanHang.DataLayer.pdb
+D:\STUDY\LTUDCSDL\LTUDCSDL\QuanLyBanHang\QuanLyBanHang.DataLayer\obj\Debug\QuanLyBanHang.DataLayer.csproj.AssemblyReference.cache
+D:\STUDY\LTUDCSDL\LTUDCSDL\QuanLyBanHang\QuanLyBanHang.DataLayer\obj\Debug\QuanLyBanHang.DataLayer.csproj.CoreCompileInputs.cache
+D:\STUDY\LTUDCSDL\LTUDCSDL\QuanLyBanHang\QuanLyBanHang.DataLayer\obj\Debug\QuanLyBanHang.DataLayer.dll
+D:\STUDY\LTUDCSDL\LTUDCSDL\QuanLyBanHang\QuanLyBanHang.DataLayer\obj\Debug\QuanLyBanHang.DataLayer.pdb
