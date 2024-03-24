@@ -22,7 +22,7 @@ CREATE TABLE QuanLy (
 	SoDT NVARCHAR(11)
 )
 
---Tạo bảng NhanVien
+--Tạo bảng NhanVien ng mượn tb
 CREATE TABLE NhanVien (
     MaNV INT PRIMARY KEY,
     HoNV VARCHAR(50),
@@ -63,7 +63,42 @@ CREATE TABLE DeviceLoans (
 
 
 
+--===PARAMETERS
+-- THIẾT BỊ
+Create proc HSP_ThietBi_Select
+@MaTB int =0
+as
+Select MaTB, TenTB, Sl, LoaiTB, TinhTrang, CurrentUser
+from Devices
+where @MaTB=Case @MaTB when 0 then @MaTB else MaTB end
 
+Go
+Exec HSP_ThietBi_Select
+
+
+Create proc HSP_ThietBi_InsertAndUpdate
+@MaTB int, @TenTB nvarchar(100), @Sl int, @LoaiTB nvarchar(50), @TinhTrang nvarchar(50), @CurrentUser varchar(100)
+as
+if exists (select 1 from Devices where MaTB=@MaTB)
+begin
+	update Devices
+	set TenTb=@TenTB,  @Sl = Sl, @LoaiTB = LoaiTB, @TinhTrang = TinhTrang, @CurrentUser = CurrentUser
+	where MaTB = @MaTB
+end
+else
+begin
+	insert into Devices(TenTB, Sl, LoaiTB, TinhTrang, CurrentUser)
+	values(@TenTB, @Sl, @LoaiTB, @TinhTrang, @CurrentUser)
+end
+
+
+
+Create proc HSP_ThietBi_Delete
+@MaTB int
+as
+Delete Devices
+where MaTB = @MaTB
+	
 
 
 --===TRIGGER
