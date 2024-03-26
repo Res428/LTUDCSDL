@@ -22,11 +22,11 @@ CREATE TABLE QuanLy (
 	SoDT NVARCHAR(11)
 )
 
---Tạo bảng NhanVien ng mượn tb
-CREATE TABLE NhanVien (
-    MaNV INT PRIMARY KEY,
-    HoNV VARCHAR(50),
-    TenNV VARCHAR(50),
+--Tạo bảng KhachHang ng mượn tb
+CREATE TABLE KhachHang (
+    MaKH INT PRIMARY KEY,
+    HoKH VARCHAR(50),
+    TenKH VARCHAR(50),
 	Email NVARCHAR(50),
 	SoDT NVARCHAR(11)
 )
@@ -58,7 +58,7 @@ CREATE TABLE DeviceLoans (
     NgayMuon DATE,
     NgayTra DATE,
     FOREIGN KEY (MaTB) REFERENCES Devices(MaTB),
-    FOREIGN KEY (MaNV) REFERENCES NhanVien(MaNV)
+    FOREIGN KEY (MaKH) REFERENCES KhachHang(MaKH)
 )
 
 
@@ -82,7 +82,7 @@ as
 if exists (select 1 from Devices where MaTB=@MaTB)
 begin
 	update Devices
-	set TenTb=@TenTB,  @Sl = Sl, @LoaiTB = LoaiTB, @TinhTrang = TinhTrang, @CurrentUser = CurrentUser
+	set TenTB=@TenTB,  @Sl = Sl, @LoaiTB = LoaiTB, @TinhTrang = TinhTrang, @CurrentUser = CurrentUser
 	where MaTB = @MaTB
 end
 else
@@ -122,8 +122,8 @@ begin
 		END
 		ELSE
 		BEGIN
-			SELECT @CurrentUser = NhanVien.MaNV
-			FROM NhanVien;
+			SELECT @CurrentUser = KhachHang.MaKH
+			FROM KhachHang;
 		END
 
 		UPDATE Devices
@@ -143,7 +143,7 @@ begin
     DECLARE @MaNV VARCHAR(100);
     DECLARE @TinhTrang VARCHAR(50);
 
-    SELECT @MaNV = i.MaNV,
+    SELECT @MaKH = i.MaKH,
            @ReturnDate = i.ReturnDate,
            @MaTB = i.MaTB,
            @MaMuon = i.MaMuon
@@ -165,7 +165,7 @@ begin
     WHERE MaMuon = @MaMuon;
 
     UPDATE Devices
-    SET CurrentUser = @MaNV,
+    SET CurrentUser = @MaKH,
         TinhTrang = @TinhTrang
     WHERE MaTB = @MaTB;
 end
