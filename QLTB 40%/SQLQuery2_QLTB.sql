@@ -15,8 +15,7 @@ GO
 --Tạo bảng Admin
 CREATE TABLE QuanLy (
     MaQL INT PRIMARY KEY,
-    HoQL VARCHAR(50),
-    TenQL VARCHAR(50),
+    HoTenQL VARCHAR(50),
 	Email NVARCHAR(50),
 	MatKhau NVARCHAR(50),
 	SoDT NVARCHAR(11)
@@ -100,6 +99,66 @@ Delete Devices
 where MaTB = @MaTB
 	
 
+
+--KHACH HANG
+Create proc HSP_KhachHang_Select
+@MaKH int =0
+as
+Select MaKH, HoKH, TenKH, Email, SoDT
+from KhachHang
+where @MaKH=Case @MaKH when 0 then @MaKH else MaKH end
+
+Go
+Exec HSP_KhachHang_Select
+
+
+Create proc HSP_KhachHang_InsertAndUpdate
+@MaKH int, @HoKH nvarchar(100), @TenKH nvarchar(50), @Email NVARCHAR(50), @SoDT NVARCHAR(11)
+as
+if exists (select 1 from KhachHang where MaKH=@MaKH)
+begin
+	update KhachHang
+	set HoKH=@HoKH, TenKH=@TenKH, Email = @Email, SoDT = @SoDT
+	where MaKH=@MaKH
+end
+else
+begin
+	insert into KhachHang(HoKH, TenKH, Email, SoDT)
+	values( @HoKH, @TenKH, @Email, @SoDT)
+end
+
+
+
+Create proc HSP_240305_KhachHang_Delete
+@MaKH int
+as
+Delete KhachHang
+where MaKH=@MaKH
+	
+
+
+--Viết thủ tục kiểm tra đăng nhập
+Create Proc HSP_QuanLy_KiemTraDangNhap
+@TaiKhoan varchar(50),
+@MatKhau varchar(50)
+as
+if exists (select 1 from QuanLy where TaiKhoan= @TaiKhoan and PWDCOMPARE(@MatKhau,MatKhau)=1)
+-- begin 
+-- 	select 1 as Code, MaQL, HoTenNVQL, Email, Matkhau, SoDT
+-- 	from NhanVien
+-- 	where TaiKhoan=@TaiKhoan and PWDCOMPARE(@MatKhau,MatKhau)=1
+end
+else
+begin 
+	select 0 as Code,'' as MaQL,N'' as HoTenQL, '' as --TaiKhoan,  0 as GroupID
+End
+Go
+--Test
+Exec HSP_QuanLy_KiemTraDangNhap 'admin','123456'
+
+
+
+	
 
 --===TRIGGER
 --Cập nhật lại tình trạng Devices
