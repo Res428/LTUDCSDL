@@ -5,11 +5,11 @@ BEGIN
 END
 
 -- Tạo database mới
-CREATE DATABASE QLTB;
+CREATE DATABASE QLTB_HK6;
 GO
 
 -- Sử dụng database vừa tạo
-USE QLTB;
+USE QLTB_HK6;
 GO
 
 --Tạo bảng Admin
@@ -41,6 +41,10 @@ CREATE TABLE Devices (
 	CurrentUser VARCHAR(100)
 )
 
+INSERT [dbo].[Devices] ([MaTB], [TenTB], [LoaiTB], [Sl], [TinhTrang], [CurrentUser]) VALUES (01, N'Alpha Mini', N'Robot', 10, DEFAULT, NULL)
+INSERT [dbo].[Devices] ([MaTB], [TenTB], [LoaiTB], [Sl], [TinhTrang], [CurrentUser]) VALUES (02, N'RoboGo', N'Automonous Car', 2, N'Cho Mượn', N'Tien Anh')
+GO
+
 -- Tạo bảng lịch sử sử dụng thiết bị
 CREATE TABLE DeviceHistory (
     MaLS INT PRIMARY KEY,
@@ -54,7 +58,7 @@ CREATE TABLE DeviceHistory (
 CREATE TABLE DeviceLoans (
     MaMuon INT PRIMARY KEY,
     MaTB INT,
-    MaNV INT,
+    MaKH INT,
     NgayMuon DATE,
     NgayTra DATE,
     FOREIGN KEY (MaTB) REFERENCES Devices(MaTB),

@@ -1,0 +1,5 @@
+D:\STUDY\LTUDCSDL\LTUDCSDL\BT\Report\BT_Report\BT_Report\obj\Debug\BT_Report.csproj.AssemblyReference.cache
+D:\STUDY\LTUDCSDL\LTUDCSDL\BT\Report\BT_Report\BT_Report\obj\Debug\BT_Report.Form1.resources
+D:\STUDY\LTUDCSDL\LTUDCSDL\BT\Report\BT_Report\BT_Report\obj\Debug\BT_Report.Properties.Resources.resources
+D:\STUDY\LTUDCSDL\LTUDCSDL\BT\Report\BT_Report\BT_Report\obj\Debug\BT_Report.csproj.GenerateResource.cache
+D:\STUDY\LTUDCSDL\LTUDCSDL\BT\Report\BT_Report\BT_Report\obj\Debug\BT_Report.csproj.CoreCompileInputs.cache
