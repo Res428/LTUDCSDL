@@ -1,4 +1,4 @@
-﻿using QuanLyBanHang.DataLayer;
+﻿using QLTB_40_ThayPhuc.DataLayer;
 using System;
 using System.Collections.Generic;
 using System.Data;

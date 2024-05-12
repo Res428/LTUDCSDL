@@ -39,7 +39,7 @@
     </Reference>
     <Reference Include="QuanLyBanHang.DataLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\QuanLyBanHang.DataLayer.dll</HintPath>
+      <HintPath>..\..\BT\hau\qlbh\qlbh\bin\Debug\QuanLyBanHang.DataLayer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -59,6 +59,8 @@
     <Compile Include="BusinessLayer\BLL_ThietBi.cs" />
     <Compile Include="ClsMain.cs" />
     <Compile Include="CustomParameter.cs" />
+    <Compile Include="DataLayer\ConnectionStringManager.cs" />
+    <Compile Include="DataLayer\MyDatabase.cs" />
     <Compile Include="DTO\account.cs" />
     <Compile Include="DTO\ThietBi.cs" />
     <Compile Include="DTO\LoaiThietBi.cs" />
