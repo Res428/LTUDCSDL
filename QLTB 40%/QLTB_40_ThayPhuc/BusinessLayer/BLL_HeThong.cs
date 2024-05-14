@@ -1,4 +1,4 @@
-﻿using QLTB_40_ThayPhuc.DataLayer;
+﻿using QuanLyBanHang.DataLayer;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,8 +12,7 @@ namespace QLTB_40_ThayPhuc.BusinessLayer
     public class BLL_HeThong
     {
         MyDatabase db;
-        ConnectionStringManager connectionStringManager;
-        public SqlConnectionStringBuilder stringBuilder;
+        
         public BLL_HeThong(string path)
         {
             db = new MyDatabase(ClsMain.path);
@@ -21,16 +20,15 @@ namespace QLTB_40_ThayPhuc.BusinessLayer
 
         public DataTable KiemTraDangNhap(ref string err, string taiKhoan, string matKhau)
         {
-            return db.GetDataTable(ref err, "SP_QuanLy_KiemTraDangNhap", CommandType.StoredProcedure,
-                  new SqlParameter("@TaiKhoan", taiKhoan),
-                  new SqlParameter("@MatKhau", matKhau));
+            SqlParameter[] sql = new SqlParameter[]
+            {
+                new SqlParameter("@TaiKhoan", taiKhoan),
+                new SqlParameter("@MatKhau", matKhau)
+            };
+
+            return db.GetDataTable(ref err, "HSP_NhanVien_KiemTraDangNhap", CommandType.StoredProcedure, sql);
         }
-        public string LayTenDatabase(ref string err, string path)
-        {
-            connectionStringManager = new ConnectionStringManager();
-            stringBuilder = connectionStringManager.ReadConnectionString(ref err, path);
-            return stringBuilder.InitialCatalog;
-        }
+       
 
         #region PhanQuyen
 

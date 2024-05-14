@@ -65,6 +65,11 @@ namespace QLTB_40_ThayPhuc
         {
             dtQuanLy = new DataTable();
             dtQuanLy = bd.KiemTraDangNhap(ref err, taiKhoan, matKhau);
+
+      
+
+
+
             if (dtQuanLy.Rows.Count > 0)
             {
                 if (dtQuanLy.Rows[0]["Code"].ToString().Equals("1"))

@@ -31,7 +31,7 @@ namespace QLTB_40_ThayPhuc
         {
             Frm_Login forml = new Frm_Login ();
             forml.ShowDialog();
-            string.Format("Đã được đăng nhập: {0}");
+            lblErr.Text = string.Format("Đã được đăng nhập: {0}", ClsMain.path);
         }
 
         #region Quản lý việc mở form trên TabControll
@@ -90,25 +90,20 @@ namespace QLTB_40_ThayPhuc
         }
         #endregion
 
-        private void MoFormDangNhap()
-        {
-            Frm_Login frml = new Frm_Login();
-            frml.ShowDialog();
-            lblErr.Text = string.Format("Hệ thống đăng nhập bởi: {0}", ClsMain.tenQL);
-        }
+        //private void MoFormDangNhap()
+        //{
+        //    Frm_Login frml = new Frm_Login();
+        //    frml.ShowDialog();
+        //    lblErr.Text = string.Format("Hệ thống đăng nhập bởi: {0}", ClsMain.tenQL);
+        //}
 
-        private void loạiTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //OpenForm(true, "Loại tài khoản", new frm_loaitaikhoan());
-            frm_loaitaikhoan frm_loaitk = new frm_loaitaikhoan();
-            frm_loaitk.ShowDialog();
-        }
+
 
         private void loaithietbi_Click(object sender, EventArgs e)
         {
-            //OpenForm(true, "Loại thiết bị", new frm_loaithietbi());
-            frm_loaithietbi frm_loaitb = new frm_loaithietbi();
-            frm_loaitb.ShowDialog();
+            //OpenForm(true, "Khách Hàng", new frm_KhachHang());
+            frm_KhachHang frm_kh = new frm_KhachHang();
+            frm_kh.ShowDialog();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -122,12 +117,6 @@ namespace QLTB_40_ThayPhuc
             frm_QLTB frmqltb = new frm_QLTB();
             frmqltb.ShowDialog();
         }
-
-        private void mnuDSMTB_Click(object sender, EventArgs e)
-        {
-            //OpenForm(true, "Danh sách mượn thiết bị", new frm_DSMTB());
-            frm_DSMTB frmdsmtb = new frm_DSMTB();
-            frmdsmtb.ShowDialog();
-        }
+        
     }
 }

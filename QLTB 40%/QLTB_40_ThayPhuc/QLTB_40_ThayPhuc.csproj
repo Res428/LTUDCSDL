@@ -55,15 +55,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLayer\BLL_HeThong.cs" />
-    <Compile Include="BusinessLayer\BLL_LoaiThietBi.cs" />
+    <Compile Include="BusinessLayer\BLL_KhachHang.cs" />
     <Compile Include="BusinessLayer\BLL_ThietBi.cs" />
     <Compile Include="ClsMain.cs" />
     <Compile Include="CustomParameter.cs" />
-    <Compile Include="DataLayer\ConnectionStringManager.cs" />
-    <Compile Include="DataLayer\MyDatabase.cs" />
     <Compile Include="DTO\account.cs" />
+    <Compile Include="DTO\KhachHang.cs" />
     <Compile Include="DTO\ThietBi.cs" />
-    <Compile Include="DTO\LoaiThietBi.cs" />
     <Compile Include="Form_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,17 +74,17 @@
     <Compile Include="Frm_Base.Designer.cs">
       <DependentUpon>Frm_Base.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_loaithietbi.cs">
+    <Compile Include="frm_KhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_loaithietbi.Designer.cs">
-      <DependentUpon>frm_loaithietbi.cs</DependentUpon>
+    <Compile Include="frm_KhachHang.Designer.cs">
+      <DependentUpon>frm_KhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_loaithietbi_Modifies.cs">
+    <Compile Include="frm_KhachHang_Modifies.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_loaithietbi_Modifies.Designer.cs">
-      <DependentUpon>frm_loaithietbi_Modifies.cs</DependentUpon>
+    <Compile Include="frm_KhachHang_Modifies.Designer.cs">
+      <DependentUpon>frm_KhachHang_Modifies.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Login.cs">
       <SubType>Form</SubType>
@@ -108,6 +106,11 @@
     <Compile Include="frm_QLTB.Designer.cs">
       <DependentUpon>frm_QLTB.cs</DependentUpon>
     </Compile>
+    <Compile Include="QLTB_HK6DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTB_HK6DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="QUYEN.cs" />
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
@@ -115,11 +118,11 @@
     <EmbeddedResource Include="Frm_Base.resx">
       <DependentUpon>Frm_Base.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_loaithietbi.resx">
-      <DependentUpon>frm_loaithietbi.cs</DependentUpon>
+    <EmbeddedResource Include="frm_KhachHang.resx">
+      <DependentUpon>frm_KhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_loaithietbi_Modifies.resx">
-      <DependentUpon>frm_loaithietbi_Modifies.cs</DependentUpon>
+    <EmbeddedResource Include="frm_KhachHang_Modifies.resx">
+      <DependentUpon>frm_KhachHang_Modifies.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
@@ -148,6 +151,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QLTB_HK6DataSet.xsc">
+      <DependentUpon>QLTB_HK6DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLTB_HK6DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTB_HK6DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTB_HK6DataSet.xss">
+      <DependentUpon>QLTB_HK6DataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -155,6 +169,15 @@
   <ItemGroup>
     <COMReference Include="AutoHelperLib">
       <Guid>{8404DD0E-7A27-4399-B1D9-6492B7DD7F7F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSDATASRC">
+      <Guid>{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}</Guid>
       <VersionMajor>1</VersionMajor>
       <VersionMinor>0</VersionMinor>
       <Lcid>0</Lcid>

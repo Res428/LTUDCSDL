@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using QLTB_40_ThayPhuc.DTO;
+using QuanLyBanHang.DataLayer;
 
 namespace QLTB_40_ThayPhuc.BusinessLayer
 {
@@ -18,7 +19,7 @@ namespace QLTB_40_ThayPhuc.BusinessLayer
         }
         public DataTable LayThietBi(ref string err, string maLH)
         {
-            return db.GetDataTable(ref err, "SP_Devices_Select", CommandType.StoredProcedure, new SqlParameter("@MaTB", maLH));
+            return db.GetDataTable(ref err, "HSP_ThietBi_Select", CommandType.StoredProcedure, new SqlParameter("@MaTB", maLH));
         }
 
         public int CapNhatThietBi(ref string err, ThietBi thietBi)
@@ -27,14 +28,14 @@ namespace QLTB_40_ThayPhuc.BusinessLayer
                 new SqlParameter("@MaTB",thietBi.MaTB),
                  new SqlParameter("@TenTB",thietBi.TenTB)
             };
-            return db.MyExcuteNonQuery(ref err, "SP_Devices_InsertAndUpdate", CommandType.StoredProcedure, sq);
+            return db.MyExcuteNonQuery(ref err, "HSP_ThietBi_InsertAndUpdate", CommandType.StoredProcedure, sq);
         }
         public int XoaThietBi(ref string err, ThietBi thietBi)
         {
             SqlParameter[] sq = new SqlParameter[]{
                 new SqlParameter("@MaTB",thietBi.MaTB)
             };
-            return db.MyExcuteNonQuery(ref err, "SP_Devices_Delete", CommandType.StoredProcedure, sq);
+            return db.MyExcuteNonQuery(ref err, "HSP_ThietBi_Delete", CommandType.StoredProcedure, sq);
         }
     }
 }
