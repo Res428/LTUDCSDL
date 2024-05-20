@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using QLTB_40_ThayPhuc.DataLayer;
 
 namespace QLTB_40_ThayPhuc.BusinessLayer
 {
@@ -28,21 +29,32 @@ namespace QLTB_40_ThayPhuc.BusinessLayer
 
             return db.GetDataTable(ref err, "HSP_NhanVien_KiemTraDangNhap", CommandType.StoredProcedure, sql);
         }
-       
+
 
         #region PhanQuyen
 
+
+
+
+
+
+
+
+
+
+        // Phương thức Lấy danh sách quyền theo Mã số nhân viên
         public DataTable LayDanhSachQuyen(ref string err, string maNV)
         {
             SqlParameter[] sqlParameters = new SqlParameter[]
             {
                 new SqlParameter("@MaNV",maNV)
             };
-            return db.GetDataTable(ref err, "PSP_PhanQuyen_Select", 
+            return db.GetDataTable(ref err, "PSP_PhanQuyen_Select",
                 CommandType.StoredProcedure, sqlParameters);
         }
 
         #endregion
+
         
     }
 }

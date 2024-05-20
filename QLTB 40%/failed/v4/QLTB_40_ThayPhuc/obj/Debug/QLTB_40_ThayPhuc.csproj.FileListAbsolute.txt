@@ -1,0 +1,59 @@
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\bin\Debug\QLTB_40_ThayPhuc.exe.config
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\bin\Debug\QLTB_40_ThayPhuc.exe
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\bin\Debug\QLTB_40_ThayPhuc.pdb
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.csproj.AssemblyReference.cache
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.Form_Main.resources
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.Frm_Login.resources
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.Properties.Resources.resources
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.csproj.GenerateResource.cache
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.csproj.CoreCompileInputs.cache
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.exe
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.pdb
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.frm_DSMTB.resources
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.frm_loaitaikhoan.resources
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.frm_loaithietbi.resources
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.frm_loaithietbi_Modifies.resources
+D:\INFORMATION TECHNOLOGY LHU\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.frm_QLTB.resources
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.csproj.AssemblyReference.cache
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\Interop.AutoHelperLib.dll
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.csproj.ResolveComReference.cache
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.Form_Main.resources
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.Frm_Login.resources
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.frm_QLTB.resources
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.Properties.Resources.resources
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.csproj.GenerateResource.cache
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.csproj.CoreCompileInputs.cache
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.Frm_Base.resources
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.Frm_QLTB_Modifies.resources
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\bin\Debug\QLTB_40_ThayPhuc.exe.config
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\bin\Debug\QLTB_40_ThayPhuc.exe
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\bin\Debug\QLTB_40_ThayPhuc.pdb
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_.88CF54AD.Up2Date
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.exe
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.pdb
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.csproj.AssemblyReference.cache
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.csproj.ResolveComReference.cache
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.Form_Main.resources
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.Frm_Base.resources
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.Frm_Login.resources
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.frm_QLTB.resources
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.Frm_QLTB_Modifies.resources
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.Properties.Resources.resources
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.csproj.GenerateResource.cache
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.csproj.CoreCompileInputs.cache
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.exe
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.pdb
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\bin\Debug\QLTB_40_ThayPhuc.exe.config
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\bin\Debug\QLTB_40_ThayPhuc.exe
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\bin\Debug\QLTB_40_ThayPhuc.pdb
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.csproj.CopyComplete
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\Interop.MSDATASRC.dll
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.frm_KhachHang.resources
+D:\INFORMATION TECHNOLOGY LHU\New folder (2)\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.frm_KhachHang_Modifies.resources
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\bin\Debug\QuanLyBanHang.DataLayer.dll
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\bin\Debug\QuanLyBanHang.DataLayer.pdb
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\Interop.MSDATASRC.dll
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.frm_KhachHang.resources
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.frm_KhachHang_Modifies.resources
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.Frm_QuanLyNhanVien_Main.resources
+D:\STUDY\LTUDCSDL\LTUDCSDL\QLTB 40%\QLTB_40_ThayPhuc\obj\Debug\QLTB_40_ThayPhuc.Frm_QuanLyNhanVien_Modifies.resources

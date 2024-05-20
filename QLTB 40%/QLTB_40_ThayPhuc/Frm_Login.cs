@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace QLTB_40_ThayPhuc
 {
     public partial class Frm_Login : Form
@@ -16,8 +17,11 @@ namespace QLTB_40_ThayPhuc
         public Frm_Login()
         {
             InitializeComponent();
+            this.AcceptButton = btnLogin;
+            this.CancelButton = btnCancel;
         }
-        
+
+
         BLL_HeThong bd;
         string err = string.Empty;
         DataTable dtQuanLy;
@@ -29,46 +33,89 @@ namespace QLTB_40_ThayPhuc
             txtPass.Text = "123456";
         }
 
+
+
         private void btnCancel_MouseClick(object sender, MouseEventArgs e)
         {
             Application.Exit();
         }
-
+        
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            //string username = txtUser.Text;
+            //string password = txtPass.Text;
             if (!string.IsNullOrEmpty(txtUser.Text))
             {
                 if (!string.IsNullOrEmpty(txtPass.Text))
                 {
+
                     if (KiemTraDangNhap(txtUser.Text, txtPass.Text))
                     {
+                        //bool hasAccessToQLNV, hasAccessToQLTB;
+                        //// Check if the user is an admin
+                        //if (username == "admin" && password == "password")
+                        //{
+                        //    //hasAccessToQLNV = true;
+                        //    //hasAccessToQLTB = true;
+                        //    ClsMain.tenQL = "Admin";
+                        //}
+                        //else
+                        //{
+                        //    //hasAccessToQLNV = false;
+                        //    //hasAccessToQLTB = true;
+                        //    ClsMain.tenQL = "User";
+                        //}
+
                         ClsMain.tenQL = dtQuanLy.Rows[0]["HoTenNV"].ToString();
                         this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Thong tin tai khoan khong dung \n" + err, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Thông tin tài khoản không đúng \n" + err, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Chua nhap Mat khau", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Vui lòng nhập mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("Chua nhap tai khoan", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng nhập tài khoản", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
+            // Simulate user authentication
+            //string username = txtUser.Text;
+            //string password = txtPass.Text;
+
+            //// Check if the user is an admin
+            //if (username == "admin" && password == "password")
+            //{
+            //    // Set the user's access rights
+            //    ClsMain.hsQuyenByUser.Add("QLNV", true); // User has access to "QLNV" (Quản lý nhân viên)
+            //    ClsMain.hsQuyenByUser.Add("QLTB", true); // User has access to "QLTB" (Quản lý thiết bị)
+            //    ClsMain.tenQL = "Admin";
+            //}
+            //else
+            //{
+            //    // Set the user's access rights
+            //    ClsMain.hsQuyenByUser.Add("QLNV", false); // User does not have access to "QLNV"
+            //    ClsMain.hsQuyenByUser.Add("QLTB", true); // User has access to "QLTB"
+            //    ClsMain.tenQL = "User";
+            //}
+
+            //// Close the login form and open the main form
+
+            //this.Close();
+            //Form_Main frm_Main = new Form_Main();
+            //frm_Main.Show();
+
         }
 
         private bool KiemTraDangNhap(string taiKhoan, string matKhau)
         {
             dtQuanLy = new DataTable();
             dtQuanLy = bd.KiemTraDangNhap(ref err, taiKhoan, matKhau);
-
-      
-
-
 
             if (dtQuanLy.Rows.Count > 0)
             {
@@ -80,6 +127,7 @@ namespace QLTB_40_ThayPhuc
             }
             return false;
         }
+
 
         private void LayGiaTriQuyen(string maNV)
         {
@@ -101,11 +149,11 @@ namespace QLTB_40_ThayPhuc
 
         private void LuuThongTinDangNhap()
         {
-            ClsMain.acc.MaQL = dtQuanLy.Rows[0]["MaNV"].ToString();
-            ClsMain.acc.HoTenQL = dtQuanLy.Rows[0]["HoTenNV"].ToString();
-            ClsMain.acc.Email = dtQuanLy.Rows[0]["TaiKhoan"].ToString();
+            ClsMain.nhanVien.MaNV = dtQuanLy.Rows[0]["MaNV"].ToString();
+            ClsMain.nhanVien.HoTenNV = dtQuanLy.Rows[0]["HoTenNV"].ToString();
+            ClsMain.nhanVien.Email = dtQuanLy.Rows[0]["Email"].ToString();
             //ClsMain.acc.Matkhau = dtQuanLy.Rows[0]["Mat"].ToString();
-            ClsMain.acc.SoDT = dtQuanLy.Rows[0]["SoDT"].ToString();
+            ClsMain.nhanVien.SoDT = dtQuanLy.Rows[0]["SoDT"].ToString();
         }
 
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
@@ -113,5 +161,32 @@ namespace QLTB_40_ThayPhuc
             //e.Cancel = true;
         }
 
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtUser_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(this, EventArgs.Empty);
+            }
+        }
+
+        private void txtPass_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(this, EventArgs.Empty);
+            }
+        }
+
+
+
     }
+
+
+
 }
+

@@ -12,7 +12,7 @@ using QLTB_40_ThayPhuc.DTO;
 
 namespace QLTB_40_ThayPhuc
 {
-    public partial class frm_QLTB : Form
+    public partial class frm_QLTB : Frm_Base
     {
         public frm_QLTB()
         {
@@ -71,7 +71,7 @@ namespace QLTB_40_ThayPhuc
             }
             else
             {
-                MessageBox.Show("chua chon thiet bi");
+                MessageBox.Show("Chưa chọn thiết bị");
             }
         }
 
@@ -84,8 +84,9 @@ namespace QLTB_40_ThayPhuc
                     MaTB = dgvThietBi.CurrentRow.Cells["colMaTB"].Value.ToString(),
                     TenTB = dgvThietBi.CurrentRow.Cells["colTenTB"].Value.ToString(),
                     LoaiTB = dgvThietBi.CurrentRow.Cells["colLoaiTB"].Value.ToString(),
+                    Sl = dgvThietBi.CurrentRow.Cells["colSL"].Value.ToString(),
                     TinhTrang = dgvThietBi.CurrentRow.Cells["colTinhTrang"].Value.ToString(),
-                    NguoiMuon = dgvThietBi.CurrentRow.Cells["colNguoiMuon"].Value.ToString()
+                    CurrentUser = dgvThietBi.CurrentRow.Cells["colCurrentUser"].Value.ToString()
                 };
             }
         }
@@ -96,25 +97,30 @@ namespace QLTB_40_ThayPhuc
             {
                 if (bLL_ThietBi.XoaThietBi(ref err, thietBi) > 0)
                 {
-                    MessageBox.Show("xoa thanh cong");
+                    MessageBox.Show("Xóa thành công");
                     LoadTB();
                     thietBi = null;
                 }
                 else
                 {
-                    MessageBox.Show("xoa k thanh cong \n" + err, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Xóa không thành công \n" + err, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("chua chon thiet bi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Chưa chọn thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         private void tsbExit_Click(object sender, EventArgs e)
         {
-            this.Close();
-            //deDongtab();
+            //this.Close();
+            deDongtab();
+        }
+
+        private void tsbRefr_Click(object sender, EventArgs e)
+        {
+            LoadTB();
         }
     }
 }

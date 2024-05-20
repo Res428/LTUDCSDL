@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace QLTB_40_ThayPhuc
 {
-    public partial class frm_KhachHang : Form
+    public partial class frm_KhachHang : Frm_Base
     {
         public frm_KhachHang()
         {
@@ -60,7 +60,7 @@ namespace QLTB_40_ThayPhuc
             }
             else
             {
-                MessageBox.Show("chua chon lh");
+                MessageBox.Show("Chưa chọn khách hàng");
             }
         }
 
@@ -70,24 +70,25 @@ namespace QLTB_40_ThayPhuc
             {
                 if (bd.XoaKhachHang(ref err, khachHang) > 0)
                 {
-                    MessageBox.Show("xoa thanh cong");
+                    MessageBox.Show("Xóa thành công");
                     HienThiKhachHang();
                     khachHang = null;
                 }
                 else
                 {
-                    MessageBox.Show("xoa k thanh cong \n" + err, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Xóa không thành công \n" + err, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("chua chon loai thiet bi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Chưa chọn khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         private void tsbthoat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
+            deDongtab();
         }
 
         private void dgvKH_Click(object sender, EventArgs e)

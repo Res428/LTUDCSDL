@@ -66,8 +66,8 @@ namespace QLTB_40_ThayPhuc
             this.nap.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.nap.Name = "nap";
             this.nap.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.nap.Size = new System.Drawing.Size(55, 22);
-            this.nap.Text = "Nạp ";
+            this.nap.Size = new System.Drawing.Size(66, 22);
+            this.nap.Text = "&Refresh";
             this.nap.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.nap.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.nap.Click += new System.EventHandler(this.nap_Click);
@@ -77,8 +77,8 @@ namespace QLTB_40_ThayPhuc
             this.tsbthem.Image = ((System.Drawing.Image)(resources.GetObject("tsbthem.Image")));
             this.tsbthem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbthem.Name = "tsbthem";
-            this.tsbthem.Size = new System.Drawing.Size(55, 22);
-            this.tsbthem.Text = "Thêm";
+            this.tsbthem.Size = new System.Drawing.Size(49, 22);
+            this.tsbthem.Text = "&Add";
             this.tsbthem.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.tsbthem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.tsbthem.Click += new System.EventHandler(this.tsbthem_Click);
@@ -88,8 +88,8 @@ namespace QLTB_40_ThayPhuc
             this.tsbsua.Image = ((System.Drawing.Image)(resources.GetObject("tsbsua.Image")));
             this.tsbsua.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbsua.Name = "tsbsua";
-            this.tsbsua.Size = new System.Drawing.Size(48, 22);
-            this.tsbsua.Text = "Sửa";
+            this.tsbsua.Size = new System.Drawing.Size(47, 22);
+            this.tsbsua.Text = "&Edit";
             this.tsbsua.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.tsbsua.Click += new System.EventHandler(this.tsbsua_Click);
             // 
@@ -98,8 +98,8 @@ namespace QLTB_40_ThayPhuc
             this.tsbxoa.Image = ((System.Drawing.Image)(resources.GetObject("tsbxoa.Image")));
             this.tsbxoa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbxoa.Name = "tsbxoa";
-            this.tsbxoa.Size = new System.Drawing.Size(48, 22);
-            this.tsbxoa.Text = "Xóa";
+            this.tsbxoa.Size = new System.Drawing.Size(60, 22);
+            this.tsbxoa.Text = "&Delete";
             this.tsbxoa.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.tsbxoa.Click += new System.EventHandler(this.tsbxoa_Click);
             // 
@@ -108,8 +108,8 @@ namespace QLTB_40_ThayPhuc
             this.tsbthoat.Image = ((System.Drawing.Image)(resources.GetObject("tsbthoat.Image")));
             this.tsbthoat.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbthoat.Name = "tsbthoat";
-            this.tsbthoat.Size = new System.Drawing.Size(62, 22);
-            this.tsbthoat.Text = "Thoát";
+            this.tsbthoat.Size = new System.Drawing.Size(46, 22);
+            this.tsbthoat.Text = "&Exit";
             this.tsbthoat.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.tsbthoat.Click += new System.EventHandler(this.tsbthoat_Click);
             // 
@@ -135,6 +135,7 @@ namespace QLTB_40_ThayPhuc
             this.dgvKH.Location = new System.Drawing.Point(0, 25);
             this.dgvKH.Name = "dgvKH";
             this.dgvKH.RowHeadersVisible = false;
+            this.dgvKH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvKH.Size = new System.Drawing.Size(1069, 523);
             this.dgvKH.TabIndex = 2;
             this.dgvKH.Click += new System.EventHandler(this.dgvKH_Click);
@@ -168,10 +169,12 @@ namespace QLTB_40_ThayPhuc
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1069, 570);
+            this.ControlBox = false;
             this.Controls.Add(this.dgvKH);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "frm_KhachHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_KhachHang";
             this.Load += new System.EventHandler(this.frm_KhachHang_Load);
             this.toolStrip1.ResumeLayout(false);

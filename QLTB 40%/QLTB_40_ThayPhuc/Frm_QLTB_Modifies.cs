@@ -17,20 +17,30 @@ namespace QLTB_40_ThayPhuc
         public Frm_QLTB_Modifies()
         {
             InitializeComponent();
+            this.AcceptButton = btnCapnhat;
+            this.CancelButton = btnThoat;
         }
 
         BLL_ThietBi bd;
         string err = string.Empty;
+        string maTB = string.Empty;
         public ThietBi thietBi = null;
         public bool isThem = false;
 
+        //DataTable dtThietBi;
+
+        private void ThemMaTBVaoData(string maTB)
+        {
+            bd.ThemThietBi(ref err, maTB);
+        }
         private void Frm_QLTB_Modifies_Load(object sender, EventArgs e)
         {
             bd = new BLL_ThietBi(ClsMain.path);
             if (isThem)
             {
-                txtMaTB.Text = "0";
+                txtMaTB.Text = bd.SinhMaLonNhat(ref err).ToString();
                 txtTenTB.Focus();
+                ThemMaTBVaoData(txtMaTB.Text);
             }
             else
             {
@@ -40,8 +50,9 @@ namespace QLTB_40_ThayPhuc
                     txtMaTB.Text = thietBi.MaTB;
                     txtTenTB.Text = thietBi.TenTB;
                     txtLoaiTB.Text = thietBi.LoaiTB;
-                    cboTinhtrang.Text = thietBi.TinhTrang;
-                    txtNguoiMuon.Text = thietBi.NguoiMuon;
+                    txtSl.Text = thietBi.Sl;
+                    txtTinhTrang.Text = thietBi.TinhTrang;
+                    txtNguoiMuon.Text = thietBi.CurrentUser;
                 }
             }
         }
@@ -55,28 +66,35 @@ namespace QLTB_40_ThayPhuc
                     MaTB = txtMaTB.Text,
                     TenTB = txtTenTB.Text,
                     LoaiTB = txtLoaiTB.Text,
-                    TinhTrang = cboTinhtrang.SelectedValue.ToString(),
-                    NguoiMuon = txtNguoiMuon.Text
+                    Sl = txtSl.Text,
+                    TinhTrang = txtTinhTrang.Text,
+                    CurrentUser = txtNguoiMuon.Text
                 };
-                if (bd.CapNhatThietBi(ref err, thietBi) > 0)
+               
+                if (bd.CapNhatThietBi(ref err, thietBi) >= 1)
                 {
-                    MessageBox.Show("thanh cong");
+                    MessageBox.Show("Thành công");
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("k thanh cong \n" + err, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Không thành công \n" + err, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("chua nhap ten thiet bi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Chưa nhập tên thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtTinhTrang_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C434F99-3A9A-43E8-9CAB-097D77423DA6}|qlbh\\qlbh.csproj|d:\\study\\ltudcsdl\\ltudcsdl\\bt\\hau\\qlbh\\qlbh\\frm_quanlykhachhang_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9C434F99-3A9A-43E8-9CAB-097D77423DA6}|qlbh\\qlbh.csproj|solutionrelative:qlbh\\frm_quanlykhachhang_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9C434F99-3A9A-43E8-9CAB-097D77423DA6}|qlbh\\qlbh.csproj|D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\qlbh\\frm_phanquyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C434F99-3A9A-43E8-9CAB-097D77423DA6}|qlbh\\qlbh.csproj|solutionrelative:qlbh\\frm_phanquyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C434F99-3A9A-43E8-9CAB-097D77423DA6}|qlbh\\qlbh.csproj|d:\\study\\ltudcsdl\\ltudcsdl\\bt\\hau\\qlbh\\qlbh\\frm_quanlykhachhang_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C434F99-3A9A-43E8-9CAB-097D77423DA6}|qlbh\\qlbh.csproj|solutionrelative:qlbh\\frm_quanlykhachhang_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C434F99-3A9A-43E8-9CAB-097D77423DA6}|qlbh\\qlbh.csproj|d:\\study\\ltudcsdl\\ltudcsdl\\bt\\hau\\qlbh\\qlbh\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C434F99-3A9A-43E8-9CAB-097D77423DA6}|qlbh\\qlbh.csproj|solutionrelative:qlbh\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C434F99-3A9A-43E8-9CAB-097D77423DA6}|qlbh\\qlbh.csproj|D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\qlbh\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C434F99-3A9A-43E8-9CAB-097D77423DA6}|qlbh\\qlbh.csproj|solutionrelative:qlbh\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C434F99-3A9A-43E8-9CAB-097D77423DA6}|qlbh\\qlbh.csproj|D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\qlbh\\businesslayer\\bll_hethong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C434F99-3A9A-43E8-9CAB-097D77423DA6}|qlbh\\qlbh.csproj|solutionrelative:qlbh\\businesslayer\\bll_hethong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frm_QuanLyKhachHang_Main.cs",
-              "DocumentMoniker": "D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\qlbh\\frm_QuanLyKhachHang_Main.cs",
-              "RelativeDocumentMoniker": "qlbh\\frm_QuanLyKhachHang_Main.cs",
-              "ToolTip": "D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\qlbh\\frm_QuanLyKhachHang_Main.cs*",
-              "RelativeToolTip": "qlbh\\frm_QuanLyKhachHang_Main.cs*",
-              "ViewState": "AQIAAGMAAAAAAAAAAAApwHUAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\qlbh\\frmLogin.cs",
+              "RelativeDocumentMoniker": "qlbh\\frmLogin.cs",
+              "ToolTip": "D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\qlbh\\frmLogin.cs",
+              "RelativeToolTip": "qlbh\\frmLogin.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T06:40:18.67Z",
+              "WhenOpened": "2024-05-20T03:04:56.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormMain.cs",
+              "DocumentMoniker": "D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\qlbh\\FormMain.cs",
+              "RelativeDocumentMoniker": "qlbh\\FormMain.cs",
+              "ToolTip": "D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\qlbh\\FormMain.cs",
+              "RelativeToolTip": "qlbh\\FormMain.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAADwv2MAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T02:58:58.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frm_QuanLyKhachHang_Main.cs [Design]",
-              "DocumentMoniker": "D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\qlbh\\frm_QuanLyKhachHang_Main.cs",
-              "RelativeDocumentMoniker": "qlbh\\frm_QuanLyKhachHang_Main.cs",
-              "ToolTip": "D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\qlbh\\frm_QuanLyKhachHang_Main.cs [Design]*",
-              "RelativeToolTip": "qlbh\\frm_QuanLyKhachHang_Main.cs [Design]*",
+              "DocumentIndex": 3,
+              "Title": "Bll_HeThong.cs",
+              "DocumentMoniker": "D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\qlbh\\BusinessLayer\\Bll_HeThong.cs",
+              "RelativeDocumentMoniker": "qlbh\\BusinessLayer\\Bll_HeThong.cs",
+              "ToolTip": "D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\qlbh\\BusinessLayer\\Bll_HeThong.cs",
+              "RelativeToolTip": "qlbh\\BusinessLayer\\Bll_HeThong.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAuwDMAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T06:23:45.797Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-18T01:49:09.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Frm_PhanQuyen.cs",
+              "DocumentMoniker": "D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\qlbh\\Frm_PhanQuyen.cs",
+              "RelativeDocumentMoniker": "qlbh\\Frm_PhanQuyen.cs",
+              "ToolTip": "D:\\STUDY\\LTUDCSDL\\LTUDCSDL\\BT\\hau\\qlbh\\qlbh\\Frm_PhanQuyen.cs",
+              "RelativeToolTip": "qlbh\\Frm_PhanQuyen.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAmwFEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T01:48:58.893Z",
+              "EditorCaption": ""
             }
           ]
         }

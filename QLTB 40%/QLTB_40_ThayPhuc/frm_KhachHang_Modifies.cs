@@ -17,6 +17,7 @@ namespace QLTB_40_ThayPhuc
         public frm_KhachHang_Modifies()
         {
             InitializeComponent();
+            this.AcceptButton = btnUpdate;
         }
 
         BLL_KhachHang bd;
@@ -29,7 +30,7 @@ namespace QLTB_40_ThayPhuc
             bd = new BLL_KhachHang(ClsMain.path);
             if (isThem)
             {
-                txtMaKH.Text = "0";
+                txtMaKH.Text = bd.SinhMaLonNhat(ref err).ToString();
                 txtHoKH.Focus();
             }
             else
@@ -55,20 +56,20 @@ namespace QLTB_40_ThayPhuc
                     HoKH = txtHoKH.Text,
                     TenKH = txtTenKH.Text,
                     SoDT = txtSoDT.Text
-            };
-                if (bd.CapNhatKhachHang(ref err, khachHang) > 0)
+                };
+                if (bd.CapNhatKhachHang(ref err, khachHang) >= 1)
                 {
-                    MessageBox.Show("thanh cong");
+                    MessageBox.Show("Thành công");
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("k thanh cong \n" + err, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Không thành công \n" + err, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("chua nhap ten loai thiet bi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Chưa nhập tên khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

@@ -68,10 +68,11 @@ namespace QLTB_40_ThayPhuc
             this.btnLogin.Location = new System.Drawing.Point(350, 216);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 1;
+            this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnLogin.Enter += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnCancel
             // 
@@ -79,9 +80,10 @@ namespace QLTB_40_ThayPhuc
             this.btnCancel.Location = new System.Drawing.Point(499, 216);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 1;
+            this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             this.btnCancel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnCancel_MouseClick);
             // 
             // txtUser
@@ -90,15 +92,18 @@ namespace QLTB_40_ThayPhuc
             this.txtUser.Location = new System.Drawing.Point(304, 87);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(313, 31);
-            this.txtUser.TabIndex = 2;
+            this.txtUser.TabIndex = 0;
+            this.txtUser.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUser_KeyDown);
             // 
             // txtPass
             // 
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.Location = new System.Drawing.Point(304, 142);
             this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(313, 31);
-            this.txtPass.TabIndex = 2;
+            this.txtPass.TabIndex = 1;
+            this.txtPass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPass_KeyDown);
             // 
             // FrmĐangNhap
             // 
@@ -116,6 +121,7 @@ namespace QLTB_40_ThayPhuc
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(657, 276);
+            this.ControlBox = false;
             this.Controls.Add(this.FrmĐangNhap);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUser);
@@ -127,6 +133,7 @@ namespace QLTB_40_ThayPhuc
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Frm_Login_Load);
+            this.Enter += new System.EventHandler(this.btnLogin_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 

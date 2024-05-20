@@ -13,7 +13,8 @@ namespace QLTB_40_ThayPhuc
     {
         public static string path = string.Format(@"{0}/Connect.ini", Application.StartupPath);
         public static string tenQL = string.Empty;
-        public static account acc = new account();
+        public static NhanVien nhanVien = new NhanVien();
+
         //Biến kiểu Hashtable dùng để lưu danh sách quyền theo chức năng của Nhân viên đăng nhập
         public static Hashtable hsQuyenByUser = new Hashtable();
 
@@ -28,6 +29,7 @@ namespace QLTB_40_ThayPhuc
             }
             return false;
         }
+
 
     }
 }

@@ -31,10 +31,10 @@ namespace QLTB_40_ThayPhuc
         {
             Frm_Login forml = new Frm_Login ();
             forml.ShowDialog();
-            lblErr.Text = string.Format("Đã được đăng nhập: {0}", ClsMain.path);
+            lblErr.Text = string.Format("Current User: {0}", ClsMain.tenQL);
         }
 
-        #region Quản lý việc mở form trên TabControll
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   #region Quản lý việc mở form trên TabControll
         /// <summary>
         /// Kiểm tra form có được mở chưa theo tên form
 
@@ -68,7 +68,33 @@ namespace QLTB_40_ThayPhuc
             TabItem t = tabControl1.SelectedTab;
             tabControl1.Tabs.Remove(t);
         }
+        private void OpenForm(bool statusOpen, string title, Frm_Base frm, QUYEN quyen)
+        {
+            if (ClsMain.CheckQuyen(frm, quyen))
+            {
+                bKTraMotab = statusOpen;
+                sTieuDe = title;
+                if (!CheckOpenTab(sTieuDe))
+                {
+                    TabItem t = tabControl1.CreateTab(sTieuDe);
+                    t.Name = frm.Name;
 
+                    frm.deDongtab = new Frm_Base._deDongtab(vDongTab);
+                    this.frm_Main = this;
+                    frm.TopLevel = false;
+                    frm.Dock = DockStyle.Fill;
+                    t.AttachedControl.Controls.Add(frm);
+                    frm.Show();
+
+                    tabControl1.SelectedTabIndex = tabControl1.Tabs.Count - 1;
+                }
+            }
+            else
+            {
+                MessageBox.Show("khong co quyen");
+            }  
+
+        }
         private void OpenForm(bool statusOpen, string title, Frm_Base frm)
         {
             bKTraMotab = statusOpen;
@@ -90,20 +116,20 @@ namespace QLTB_40_ThayPhuc
         }
         #endregion
 
-        //private void MoFormDangNhap()
-        //{
-        //    Frm_Login frml = new Frm_Login();
-        //    frml.ShowDialog();
-        //    lblErr.Text = string.Format("Hệ thống đăng nhập bởi: {0}", ClsMain.tenQL);
-        //}
+        private void MoFormDangNhap()
+        {
+            Frm_Login frml = new Frm_Login();
+            frml.ShowDialog();
+            lblErr.Text = string.Format("Current User: {0}", ClsMain.tenQL);
+        }
 
 
 
         private void loaithietbi_Click(object sender, EventArgs e)
         {
-            //OpenForm(true, "Khách Hàng", new frm_KhachHang());
-            frm_KhachHang frm_kh = new frm_KhachHang();
-            frm_kh.ShowDialog();
+            OpenForm(true, "Khách Hàng", new frm_KhachHang());
+            //frm_KhachHang frm_kh = new frm_KhachHang();
+            //frm_kh.ShowDialog();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -113,10 +139,32 @@ namespace QLTB_40_ThayPhuc
 
         private void mmnuQLTB_Click(object sender, EventArgs e)
         {
-            //OpenForm(true, "Quản lý thiết bị", new frm_QLTB());
-            frm_QLTB frmqltb = new frm_QLTB();
-            frmqltb.ShowDialog();
+            OpenForm(true, "Quản lý thiết bị", new frm_QLTB());
+            //frm_QLTB frmqltb = new frm_QLTB();
+            //frmqltb.ShowDialog();
         }
-        
+
+        private void mnuDangXuat_Click(object sender, EventArgs e)
+        {
+            MoFormDangNhap();
+        }
+
+        private void mnuQLNV_Click(object sender, EventArgs e)
+        {
+
+            OpenForm(true, "Quản lý nhân viên", new Frm_QuanLyNhanVien_Main());
+
+            //if (ClsMain.tenQL == "admin")
+            //{
+            //    // Nếu user có quyền truy cập, mở form Frm_QuanLyNhanVien_Main
+            //    OpenForm(true, "Quản lý nhân viên", new Frm_QuanLyNhanVien_Main());
+            //}
+            //else if (ClsMain.tenQL == "User")
+            //{
+            //    // Nếu user không có quyền truy cập, hiển thị thông báo
+            //    MessageBox.Show("Bạn không có quyền truy cập vào chức năng này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
+
+        }
     }
 }
